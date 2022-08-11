@@ -8,7 +8,7 @@
  *   $ node lista-01/js01-calcula-idade.js
  *   👉 Quem nasceu em 2002, sua idade é 20
  *  - altere a variável para outros anos e verifique se a resposta está correta
- * 
+ *
  * IMPORTANTE:
  * - Não precisa obter do usuário os dados de entrada
  * - Não precisa fazer uma página web para obter os dados
@@ -16,11 +16,15 @@
  *   a lógica do programa
  */
 
-var anoNascimento = 2002
+var anoNascimento = 2002;
 
 // Tem que pegar o ano atual usando JS e subtrair a var acima
-var idade = 2022 - anoNascimento
+var hoje = new Date();
 
-var resultado = '👉 Quem nasceu em ' + anoNascimento + ', sua idade é ' + idade
+var anoAtual = hoje.getFullYear();
 
-console.log(resultado)
+var idade = anoAtual - anoNascimento;
+
+var resultado = "👉 Quem nasceu em " + anoNascimento + ", sua idade é " + idade;
+
+console.log(resultado);
